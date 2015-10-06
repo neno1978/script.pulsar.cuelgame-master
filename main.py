@@ -7,7 +7,7 @@ import urllib2
 from xml.dom import minidom
 from HTMLParser import HTMLParser
 
-PAYLOAD = json.loads(base64.b64decode(sys.argv[1]))
+PAYLOAD = json.loads(base64.b64decode(sys.argv[1])
 
 def search(query):
     response = urllib2.urlopen("http://cuelgame.net/rss2.php?q=%s" % urllib.quote_plus(query))
